@@ -28,5 +28,5 @@ app.post("/posts/:id/comments", (req, res) => {
 });
 
 app.listen(7000, () => {
-  console.log(`Posts online on PORT 7000`);
+  console.log(`Comments online on PORT 7000`);
 });
