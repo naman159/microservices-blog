@@ -9,9 +9,9 @@ app.use(bParser.json());
 app.post("/events", (req, res) => {
   const event = req.body;
 
-  axios.post("http://localhost:3000/events", event);
-  axios.post("http://localhost:5000/events", event);
-  axios.post("http://localhost:7000/events", event);
+  axios.post("http://localhost:5000/events", event); //Posts
+  axios.post("http://localhost:7000/events", event); //Comments
+  axios.post("http://localhost:8001/events", event); //Query Service
 
   res.send({ status: "OK" });
 });
